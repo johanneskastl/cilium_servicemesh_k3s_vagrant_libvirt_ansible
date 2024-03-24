@@ -32,3 +32,9 @@
               clusterPoolIPv4PodCIDRList: "10.42.0.0/16"
           operator:
             replicas: 1
+          nodePort:
+            enabled: true
+          ingressController:
+            enabled: true
+            loadbalancerMode: 'shared'
+            default: true
